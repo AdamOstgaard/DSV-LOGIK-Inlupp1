@@ -1,0 +1,100 @@
+❯ gprolog --consult-file uppgift_a.pl                                                                                                                                                                                          23:21
+GNU Prolog 1.4.5 (64 bits)
+Compiled Jul 15 2018, 03:47:56 with gcc
+By Daniel Diaz
+Copyright (C) 1999-2018 Daniel Diaz
+compiling /home/adam/Code/Git/School/LOGIK/DSV-LOGIK-Inlupp1/uppgift_a.pl for byte code...
+/home/adam/Code/Git/School/LOGIK/DSV-LOGIK-Inlupp1/uppgift_a.pl compiled, 261 lines read - 75309 bytes written, 71 ms
+| ?- ancestor(gustaf-vi-adolf, prins-alexander).
+
+true ? 
+
+(1 ms) yes
+| ?- brother_in_law(prins-daniel, Y).
+
+Y = prinsessan-madeleine ? 
+
+(3 ms) yes
+| ?- aunt(X, prins-alexander).
+
+X = kronprinsessan-victoria ? 
+
+yes
+| ?- nephew(carl-johan, Y).
+
+(25 ms) no
+| ?- father_in_law(carl-xvi-gustaf, Y).
+
+Y = prins-daniel ? 
+
+(1 ms) yes
+| ?- cousin(prins-oscar, Y).
+
+Y = prins-alexander ? 
+
+(2 ms) yes
+
+| ?- test.
+Exists man/1? [YES]
+Exists woman/1? [YES]
+Exists husband/2? [YES]
+Correct sex in husband/2? [YES]
+Exists wife/2? [YES]
+Correct sex in wife/2? [YES]
+Exists father/2? [YES]
+Correct sex in father/2? [YES]
+Exists mother/2? [YES]
+Correct sex in mother/2? [YES]
+Exists married/2? [YES]
+Exists father_in_law/2? [YES]
+Correct sex in father_in_law/2? [YES]
+Exists mother_in_law/2? [YES]
+Correct sex in mother_in_law/2? [YES]
+Exists parent/2? [YES]
+Exists son/2? [YES]
+Correct sex in son/2? [YES]
+Exists daughter/2? [YES]
+Correct sex in daughter/2? [YES]
+Exists grandfather/2? [YES]
+Correct sex in grandfather/2? [YES]
+Exists grandmother/2? [YES]
+Correct sex in grandmother/2? [YES]
+Exists brother/2? [YES]
+Correct sex in brother/2? [YES]
+Exists sister/2? [YES]
+Correct sex in sister/2? [YES]
+Exists uncle/2? [YES]
+Correct sex in uncle/2? [YES]
+Exists aunt/2? [YES]
+Correct sex in aunt/2? [YES]
+Exists cousin/2? [YES]
+Exists brother_in_law/2? [YES]
+Correct sex in brother_in_law/2? [YES]
+Exists sister_in_law/2? [YES]
+Correct sex in sister_in_law/2? [YES]
+Exists nephew/2? [YES]
+Correct sex in nephew/2? [YES]
+Exists niece/2? [YES]
+Correct sex in niece/2? [YES]
+Exists ancestor/2? [YES]
+Test case: uncle(prins-daniel, X) [OK]
+Test case: uncle(X, prins-alexander) [OK]
+Test case: cousin(X, prins-alexander) [OK]
+Test case: son(X, gustaf-vi-adolf) [OK]
+Test case: father_in_law(gustaf-vi-adolf, X) [OK]
+Test case: mother_in_law(silvia-f-sommerlath, X) [OK]
+Test case: parent(X, prins-bertil) [OK]
+Test case: grandfather(carl-xvi-gustaf, X) [OK]
+Test case: grandmother(silvia-f-sommerlath, X) [OK]
+Test case: brother(prins-bertil, X) [OK]
+Test case: sister(X, carl-xvi-gustaf) [OK]
+Test case: aunt(X, prins-carl-philip) [OK]
+Test case: brother_in_law(prins-daniel, X) [OK]
+Test case: brother_in_law(X, prins-daniel) [OK]
+Test case: sister_in_law(X, prins-daniel) [OK]
+Test case: sister_in_law(silvia-f-sommerlath, X) [OK]
+Test case: nephew(X, prinsessan-sofia) [OK]
+Test case: niece(X, prinsessan-sofia) [OK]
+Test case: ancestor(X, prins-oscar) [OK]
+
+(91 ms) yes
